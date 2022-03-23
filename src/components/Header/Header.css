@@ -1,0 +1,16 @@
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 0 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--yellow);
+}

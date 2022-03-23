@@ -1,0 +1,16 @@
+.shop-container {
+    display: flex;
+}
+
+.product-container {
+    flex-grow: 1;
+}
+
+.cart-container {
+    flex-shrink: 0;
+    width: 264px;
+    height: 100vh;
+    background-color: var(--light-yellow);
+    position: sticky;
+    top: 0;
+}
