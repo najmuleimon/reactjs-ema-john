@@ -4,6 +4,7 @@
 
 .product-container {
     flex-grow: 1;
+    padding: 120px 0 95px 0;
 }
 
 .cart-container {

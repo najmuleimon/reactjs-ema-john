@@ -1,17 +1,20 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import './Product.css';
+import {FaCartPlus} from 'react-icons/fa';
 
-const Product = (props) => {
-    // console.log(props.product);
-    const {name, price, img} = props.product;
+const Product = ({product, handleCart}) => {
+    // console.log(product);
+    const {name, price, img, category} = product;
     return (
         <div className='col-md-4'>
-            <Card>
+            <Card className='product-card'>
                 <img src={img} alt="Product" />
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
-                    <p>{price}</p>
-                    <button>Go somewhere</button>
+                    <h4>{name}</h4>
+                    <h5>Category: {category}</h5>
+                    <p>Price: ${price}</p>
+                    <button onClick={() => handleCart(product)}>Add to Cart <FaCartPlus/> </button>
                 </Card.Body>
             </Card>
         </div>
