@@ -2,11 +2,13 @@
 const addToDb = id => {
     let shoppingCart = {};
 
+    // get the shopping cart from local storage
     const storedCart = localStorage.getItem('shopping-cart')
     if(storedCart){
         shoppingCart = JSON.parse(storedCart)
     }
 
+    // add product quantity
     const quantity = shoppingCart[id]
     if(quantity){
         const newQuantity = quantity + 1;

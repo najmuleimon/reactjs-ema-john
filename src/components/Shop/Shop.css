@@ -14,4 +14,5 @@
     background-color: var(--light-yellow);
     position: sticky;
     top: 0;
+    padding: 20px 16px;
 }

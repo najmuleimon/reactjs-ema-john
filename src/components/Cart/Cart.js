@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = (props) => {
     const {cartData} = props
@@ -13,7 +14,7 @@ const Cart = (props) => {
         shipping = shipping + product.shipping;
     }
 
-    const tax = parseFloat(total * 0.1).toFixed(2);
+    const tax = parseFloat((total * 0.1).toFixed(2));
     const grandTotal = total + shipping + tax;
     return (
         <div>
